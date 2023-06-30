@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zameen Lo</title>
+    <link href="/assets/css-compress/7a81152952ef25f1ea636813d80a0405.css?v=1664524241" rel="stylesheet">
+    <link type="image/png" rel="icon" href="/assets/img/logo.png">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header class="header transparent scroll-hide">
+            <div class="site-navbar-wrap v1">
+                <div class="container">
+                    <div class="site-navbar">
+                        <div class="row align-items-center">
+                            <div class="col-lg-2 col-md-5 col-sm-5 col-4 order-2 order-xl-1 order-lg-1 order-sm-2 order-md-2"
+                                id="logo">
+                                <a class="navbar-brand" href="/">
+                                    <p style="display:inline-block"><img src="/assets/img/logo.png"
+                                            style="width: 50px; height: 50px;margin-bottom: 10px;margin-right: 5px;"
+                                            alt="logo" class="img-fluid">
+                                        <h3 style="color:white;padding-top: 15px; display: inline-block;">Zameen Lo</h3>
+                                    </p>
+                                </a>
+                            </div>
+                            <div
+                                class="col-lg-5 col-md-1 col-sm-1 col-2 order-1 order-xl-2 order-lg-2 order-sm-1 order-md-1">
+                                <nav class="site-navigation text-left">
+                                    <div class="container">
+                                        <ul class="site-menu js-clone-nav d-none d-lg-block">
+                                            <li>
+                                                <a href="/" class='active'>Home</a>
+                                            </li>
+                                            <li>
+                                                <a href="/to-rent/">About</a>
+                                            </li>
+                                            <li>
+                                                <a href="/maps/">Blog</a>
+                                            </li>
+                                            <li>
+                                                <a href="/register">Sell</a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </nav>
+                                <div class="d-lg-none sm-left">
+                                    <a href="#" class="mobile-bar js-menu-toggle">
+                                        <span class="lnr lnr-menu"></span>
+                                    </a>
+                                </div>
+                                <div class="site-mobile-menu">
+                                    <div class="site-mobile-menu-header">
+                                        <div class="site-mobile-menu-close js-menu-toggle">
+                                            <span class="lnr lnr-cross"></span>
+                                        </div>
+                                    </div>
+                                    <div class="site-mobile-menu-body"></div>
+                                </div>
+                            </div>
+                            <div class="d-lg-none col-md-6 col-sm-6 order-md-3 order-sm-3 col-6 order-3 text-right"
+                                id="mobile-right-nav">
+                                <ul class="user-btn v2">
+                                    <li><a data-toggle="modal" data-target="#user-login-popup" id="login-icon-btn"><i
+                                                class="lnr lnr-user"></i> &nbsp;</a>
+                                    </li>
+                                    <li>
+                                        <a class="btn v6" href="/login" id="login-icon-btn">Post Property
+                                            <span>Free</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-5 col-lg-5 order-xl-3 order-lg-3 text-right pr-xs-0" id="right-nav">
+                                <div class="menu-btn">
+
+                                    <ul class="user-btn v2">
+                                        <li><a data-toggle="modal" data-target="#user-login-popup"
+                                                id="login-icon-btn"><i class="lnr lnr-user"></i></a>
+                                        </li>
+                                    </ul>
+                                    <div class="add-list float-right ml-3">
+                                        <a class="btn v6" href="/login">Post Property <span>Free</span> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <style>
+            .site-navbar-wrap.v1 {
+                background: none;
+            }
+        </style>
+        <div class="hero v1 section-padding" style="background-image: url(/assets/1e23d7f5/header/hero_5.webp)">
+            <div class="overlay op-3"></div>
+            <div class="container">
+                <div class="col-md-10 offset-md-1">
+                    <div class="header-text v1">
+                        <h1>Properties for Sale in Pakistan</h1>
+                        <p class="header-text v2"><span></span></p>
+                    </div>
+                </div>
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <div class="tab-content add_list_content">
+                                <div class="tab-pane fade active show " id="for-sale">
+                                    <form id="homesearch-for-sale" class="hero__form v1 filter listing-filter"
+                                        action="/properties" method="get" role="form">
+
+                                        <div class="row">
+
+
+                                            <div
+                                                class="col-xl-10 col-lg-10 col-md-9 col-sm-9 col-8 py-3 pl-30 pr-0 location-clear">
+                                                <input type="text" class="input-box" name="name" id="place-event"
+                                                    placeholder="Search for Property" value="<%=query%>">
+
+                                            </div>
+                                            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 py-3 pl-30 pr-0">
+                                                <div class="submit_btn">
+                                                    <button class="btn v3" type="submit"
+                                                        id="sale-submit">Search</button>
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <span class="scrolltotop"><i class="lnr lnr-arrow-up"></i></span>
+        <div class="container" style="background-color:white;">
+
+            <section style="background-color: white;">
+                <div class="container py-5">
+                    <%properties.forEach((property)=>{%>
+                        <% if(property.isEnabled){%>
+                            <div class="row justify-content-center mb-3">
+                                <div class="col-md-12 col-xl-12">
+                                    <div class="card shadow-0 border rounded-3">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                                                    <div class="bg-image hover-zoom ripple rounded ripple-surface">
+                                                        <img src="http://localhost:3001/<%=property.imgSrc%>"
+                                                            class="w-100" />
+                                                        <a href="#!">
+                                                            <div class="hover-overlay">
+                                                                <div class="mask"
+                                                                    style="background-color: rgba(253, 253, 253, 0.15);">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-lg-6 col-xl-6">
+                                                    <h5 style=" white-space: nowrap;
+                                                    overflow: hidden;
+                                                    text-overflow: ellipsis;">
+                                                        <%=property.name%>
+                                                    </h5>
+                                                    <div class="d-flex flex-row">
+                                                        <div class="text-danger mb-1 me-2">
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                            <i class="fa fa-star"></i>
+                                                        </div>
+                                                        <span>310</span>
+                                                    </div>
+                                                    <div class="mt-1 mb-0 text-muted small">
+                                                        <span>Rooms: <%=property.rooms%></span>
+                                                        <span class="text-primary"> • </span>
+                                                        <span>Baths: <%=property.baths%></span>
+                                                        <span class="text-primary"> • </span>
+                                                        <span>Size: <%=property.size%><br /></span>
+                                                    </div>
+                                                    <!-- <div class="mb-2 text-muted small">
+                             <span>Unique design</span>
+                             <span class="text-primary"> • </span>
+                             <span>For men</span>
+                             <span class="text-primary"> • </span>
+                             <span>Casual<br /></span>
+                           </div> -->
+                                                    <br>
+                                                    <p class="text-truncate mb-4 mb-md-0" style=" white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">
+                                                        <%=property.description%>
+                                                    </p>
+                                                </div>
+                                                <div
+                                                    class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                                                    <div class="d-flex flex-row align-items-center mb-1">
+                                                        <h4 class="mb-1 me-1">Rs. <%=property.price%>
+                                                        </h4>
+                                                        <span class="text-danger"> Limited Time Offer</span>
+                                                        <!-- <span class="text-danger"><s>For Sale</s></span> -->
+                                                    </div>
+
+                                                    <h6 class="text-success">Contact: <%=property.userId.phone%>
+                                                    </h6><br>
+                                                    <div class="d-flex flex-column mt-4">
+                                                        <a href="/viewProperty/<%=property.id%>"
+                                                            class="btn btn-primary btn-sm" type="button">Details</a>
+                                                        <!-- <button class="btn btn-outline-primary btn-sm mt-2" type="button">
+                               Add to wishlist
+                             </button> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <%}%>
+                                <%})%>
+
+                </div>
+            </section>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="footer-wrapper v3 ">
+        <div class="footer-top-area">
+            <div class="container">
+                <div class="row nav-folderized">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="footer-logo">
+                            <a href="/"> <img src="/assets/1e23d7f5/rp-whit-n-green-logo.png" width="149" height="138"
+                                    alt="logo"></a>
+                            <div class="company-desc">
+                                <h3>
+                                    Realproperty.pk - Pakistan's best free property listings website.
+                                    <span> Trusted place to investing, renting, buying &amp; selling online. </span>
+                                </h3>
+                                <div class="footer-social-wrap">
+                                    <p>Follow us on </p>
+                                    <ul class="social-buttons style2">
+                                        <li><a href="https://www.facebook.com/realproperty.pk" target="_blank"><i
+                                                    class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="https://twitter.com/realpropertypk" target="_blank"><i
+                                                    class="fab fa-twitter"></i></a></li>
+                                        <li><a href="https://www.pinterest.com/realpropertypk" target="_blank"><i
+                                                    class="fab fa-pinterest-p"></i></a></li>
+                                        <li><a href="https://pk.linkedin.com/company/realproperty-pk/"
+                                                target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 text-center sm-left">
+                        <div class="footer-content nav">
+                            <h2 class="title">Quick Links Searches</h2>
+                            <ul class="list res-list">
+                                <li><a class="link-hov style2" href="/to-rent/">Property for Rent</a></li>
+                                <li><a class="link-hov style2" href="/">Property for Sale</a></li>
+                                <li><a class="link-hov style2" href="/maps/">Society Maps</a></li>
+                                <li><a class="link-hov style2" href="/blog/">News & Guide</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 text-center sm-left">
+                        <div class="footer-content nav">
+                            <h2 class="title">Company</h2>
+                            <ul class="list res-list">
+                                <li><a class="link-hov style2" href="/about.html"> About us</a></li>
+                                <li><a class="link-hov style2" href="/contact.html">Contact us</a></li>
+                                <li><a class="link-hov style2" href="/terms.html">Privacy Policy</a></li>
+                                <li><a class="link-hov style2" href="/rent-sell-property-free/">Place Free Ad</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12">
+                        <div class="footer-content">
+                            <h2 class="title">Contact</h2>
+                            <ul class="list footer-list mt-20">
+                                <li class="contact-info">
+                                    <div class="icon">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="text">1st Floor Habib Tower, Main Boulevard Valencia Town, Lahore
+                                    </div>
+                                </li>
+                                <li class="contact-info">
+                                    <div class="icon">
+                                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="text"><a href="#"><span class="__cf_email__"
+                                                data-cfemail="741d1a121b340611151804061b041106000d5a041f">[email&#160;protected]</span></a>
+                                    </div>
+                                </li>
+                                <li class="contact-info">
+                                    <div class="icon">
+                                        <i class="fa fa-phone" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="text">+92 320 145 00 92</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-8 offset-md-2">
+                        <p>
+                            &copy;RealProperty.pk 2023. All rights reserved. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script type="text/javascript" src="/assets/js-compress/ec645df194ecd0fda19e76bed511bfdb.js?v=1664360743"></script>
+    <script>
+        jQuery(function ($) {
+            jQuery('#register_form').yiiActiveForm([{
+                "id": "loginform-username",
+                "name": "username",
+                "container": ".field-username",
+                "input": "#username",
+                "error": ".help-block.help-block-error",
+                "validate": function (attribute, value, messages, deferred, $form) {
+                    yii.validation.required(value, messages, {
+                        "message": "Email cannot be blank."
+                    });
+                    yii.validation.email(value, messages, {
+                        "pattern": /^[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$/,
+                        "fullPattern": /^[^@]*<[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?>$/,
+                        "allowName": false,
+                        "message": "Email is not a valid email address.",
+                        "enableIDN": false,
+                        "skipOnEmpty": 1
+                    });
+                }
+            }, {
+                "id": "loginform-password",
+                "name": "password",
+                "container": ".field-loginform-password",
+                "input": "#loginform-password",
+                "error": ".help-block.help-block-error",
+                "validate": function (attribute, value, messages, deferred, $form) {
+                    yii.validation.required(value, messages, {
+                        "message": "Password cannot be blank."
+                    });
+                }
+            }, {
+                "id": "loginform-rememberme",
+                "name": "rememberMe",
+                "container": ".field-check-l",
+                "input": "#check-l",
+                "error": ".help-block.help-block-error",
+                "validate": function (attribute, value, messages, deferred, $form) {
+                    yii.validation.boolean(value, messages, {
+                        "trueValue": "1",
+                        "falseValue": "0",
+                        "message": "Remember me must be either \"1\" or \"0\".",
+                        "skipOnEmpty": 1
+                    });
+                }
+            }], []);
+            jQuery('#register-form').yiiActiveForm([{
+                "id": "signupform-username",
+                "name": "username",
+                "container": ".field-signupform-username",
+                "input": "#signupform-username",
+                "error": ".help-block.help-block-error",
+                "validate": function (attribute, value, messages, deferred, $form) {
+                    value = yii.validation.trim($form, attribute, [], value);
+                    yii.validation.required(value, messages, {
+                        "message": "Full Name cannot be blank."
+                    });
+                    yii.validation.string(value, messages, {
+                        "message": "Full Name must be a string.",
+                        "min": 2,
+                        "tooShort": "Full Name should contain at least 2 characters.",
+                        "max": 255,
+                        "tooLong": "Full Name should contain at most 255 characters.",
+                        "skipOnEmpty": 1
+                    });
+                }
+            }, {
+                "id": "signupform-email",
+                "name": "email",
+                "container": ".field-signupform-email",
+                "input": "#signupform-email",
+                "error": ".help-block.help-block-error",
+                "validate": function (attribute, value, messages, deferred, $form) {
+                    value = yii.validation.trim($form, attribute, [], value);
+                    yii.validation.required(value, messages, {
+                        "message": "Email cannot be blank."
+                    });
+                    yii.validation.email(value, messages, {
+                        "pattern": /^[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$/,
+                        "fullPattern": /^[^@]*<[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?>$/,
+                        "allowName": false,
+                        "message": "Email is not a valid email address.",
+                        "enableIDN": false,
+                        "skipOnEmpty": 1
+                    });
+                    yii.validation.string(value, messages, {
+                        "message": "Email must be a string.",
+                        "max": 255,
+                        "tooLong": "Email should contain at most 255 characters.",
+                        "skipOnEmpty": 1
+                    });
+                }
+            }, {
+                "id": "signupform-password",
+                "name": "password",
+                "container": ".field-signupform-password",
+                "input": "#signupform-password",
+                "error": ".help-block.help-block-error",
+                "validate": function (attribute, value, messages, deferred, $form) {
+                    yii.validation.required(value, messages, {
+                        "message": "Password cannot be blank."
+                    });
+                    yii.validation.string(value, messages, {
+                        "message": "Password must be a string.",
+                        "min": 6,
+                        "tooShort": "Password should contain at least 6 characters.",
+                        "skipOnEmpty": 1
+                    });
+                }
+            }, {
+                "id": "signupform-password_repeat",
+                "name": "password_repeat",
+                "container": ".field-signupform-password_repeat",
+                "input": "#signupform-password_repeat",
+                "error": ".help-block.help-block-error",
+                "validate": function (attribute, value, messages, deferred, $form) {
+                    yii.validation.required(value, messages, {
+                        "message": "Password Repeat cannot be blank."
+                    });
+                    yii.validation.compare(value, messages, {
+                        "operator": "==",
+                        "type": "string",
+                        "compareAttribute": "signupform-password",
+                        "compareAttributeName": "SignupForm[password]",
+                        "skipOnEmpty": 1,
+                        "message": "Passwords don't match"
+                    }, $form);
+                }
+            }, {
+                "id": "signupform-mobile",
+                "name": "mobile",
+                "container": ".field-signupform-mobile",
+                "input": "#signupform-mobile",
+                "error": ".help-block.help-block-error",
+                "validate": function (attribute, value, messages, deferred, $form) {
+                    yii.validation.required(value, messages, {
+                        "message": "Mobile cannot be blank."
+                    });
+                    if ($.trim($('#signupform-mobile').val())) {
+                        if (!$('#signupform-mobile').intlTelInput("isValidNumber")) {
+                            messages.push("Invalid phone number");
+                        }
+                    }
+                }
+            }, {
+                "id": "signupform-terms",
+                "name": "terms",
+                "container": ".field-signupform-terms",
+                "input": "#signupform-terms",
+                "error": ".help-block.help-block-error",
+                "validate": function (attribute, value, messages, deferred, $form) {
+                    yii.validation.required(value, messages, {
+                        "message": "This field is mandatory",
+                        "requiredValue": 1
+                    });
+                }
+            }], []);
+            jQuery('#register-form3').yiiActiveForm([{
+                "id": "passwordresetrequestform-email",
+                "name": "email",
+                "container": ".field-passwordresetrequestform-email",
+                "input": "#passwordresetrequestform-email",
+                "error": ".help-block.help-block-error",
+                "validate": function (attribute, value, messages, deferred, $form) {
+                    value = yii.validation.trim($form, attribute, [], value);
+                    yii.validation.required(value, messages, {
+                        "message": "Email cannot be blank."
+                    });
+                    yii.validation.email(value, messages, {
+                        "pattern": /^[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$/,
+                        "fullPattern": /^[^@]*<[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?>$/,
+                        "allowName": false,
+                        "message": "Email is not a valid email address.",
+                        "enableIDN": false,
+                        "skipOnEmpty": 1
+                    });
+                }
+            }], []);
+            $('#signupform-type').val(1);
+            $('#signupform-individual').click(function () {
+                $('#signupform-type').val(1);
+                $('#signupform-agent').prop('checked', false);
+                $('#signupform-builder').prop('checked', false);
+            });
+            $('#signupform-agent').click(function () {
+                $('#signupform-type').val(2);
+                $('#signupform-individual').prop('checked', false);
+                $('#signupform-builder').prop('checked', false);
+            });
+            $('#signupform-builder').click(function () {
+                $('#signupform-type').val(3);
+                $('#signupform-agent').prop('checked', false);
+                $('#signupform-individual').prop('checked', false);
+            });
+            $('#signupform-mobile').intlTelInput({
+                initialCountry: 'pk',
+                separateDialCode: true
+            });
+            $('#register-form').on('submit', function (e) {
+                $('#signupform-mobile_num').val($('#signupform-mobile').intlTelInput('getNumber'));
+            });
+        });
+    </script>
+</body>
+
+</html>
