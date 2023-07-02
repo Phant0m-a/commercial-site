@@ -44,7 +44,7 @@ app.use(upload({
 
 // CONNECTION MONGO
 mongoose.connect(
-    process.env.MONGOLOCAL,
+    'mongodb+srv://ranafaisal989301:Q4w3CKdMuTq5ZIRt@cluster0.bcczg5l.mongodb.net/?retryWrites=true&w=majority',
     { useNewUrlParser: true, useUnifiedTopology: true }
 );
 

@@ -10,11 +10,14 @@ const login = async (phone, password,res) => {
         const user = await UserModal.findOne({
             phone: phone
         });
+   
+       
         if (user && user.isEnabled == true) {
             if (bcrypt.compareSync(password, user.password)) {
+             
                 const token = newToken(user);
                 res.cookie('token', token);
-                if (user.phone == '03455832570') {
+                if (user.phone == process.env.ADMINNUMBER) {
                     res.cookie('ad', true);
                   
                     //admin
