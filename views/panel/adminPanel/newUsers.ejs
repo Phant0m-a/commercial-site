@@ -94,7 +94,7 @@
                     <div class="card mb-4">
                         <div class="card-header">
                             <i class="fas fa-table me-1"></i>
-                            New Accounts List
+                            New Accounts Count: <%=allUsers.lenght?? 0%>
                         </div>
                         <div class="card-body">
                             <table id="datatablesSimple">
@@ -125,7 +125,7 @@
                                     <tr>
                                         <td> <div >
                                             <%if(user.imgSrc != ''){%>
-                                                <img class="card-img-top"height="40"  width= '40'  src="http://localhost:3001/<%=user.imgSrc%>"
+                                                <img class="card-img-top"height="40"  width= '40'  src="/<%=user.imgSrc%>"
                                                 alt="profile image">
                                                 <% }else{%>
                                                     <img class="card-img-top placeholder-glow"height="40"  width= '40'  src="/assets/img/noImage.png"

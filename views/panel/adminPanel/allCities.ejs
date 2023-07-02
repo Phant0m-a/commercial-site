@@ -141,7 +141,7 @@
                     <div class="card mb-4">
                         <div class="card-header">
                             <i class="fas fa-table me-1"></i>
-                            All Cities List
+                            Cities count: <%=allCities.lenght??0%>
                         </div>
 
                         <div class="card-body">
@@ -157,7 +157,7 @@
                                 </thead>
                                 <tfoot>
                                     <tr>
-                                        <th>Property</th>
+                                        <th>City</th>
                                         <th>Name</th>
                                         <th>Status</th>
                                         <th>Operations</th>
@@ -172,11 +172,11 @@
                                             <td>
                                                 <div>
                                                     <%if(city.imgSrc != ''){%>
-                                                        <img class="card-img-top"height="40"  width= '40'  src="http://localhost:3001/<%=city.imgSrc%>"
-                                                        alt="profile image">
+                                                        <img class="card-img-top"height="40"  width= '40'  src="/<%=city.imgSrc%>"
+                                                        alt="city image">
                                                         <% }else{%>
                                                             <img class="card-img-top placeholder-glow"height="40"  width= '40'  src="/assets/img/noImage.png"
-                                                        alt="profile image">
+                                                        alt="city image">
                                                             <% }%>
                                                 </div>
                                             </td>
@@ -232,8 +232,8 @@
                                                 </div>
                                                 <!-- body -->
                                                 <div class="modal-body">
-                                                    <img src="http://localhost:3001/<%=city.imgSrc%>" width="60px"
-                                                        height="60px" alt="property image">
+                                                    <img src="/<%=city.imgSrc%>" width="60px"
+                                                        height="60px" alt="city image">
                                                     <br><br>
                                                     <form action="/account/updateCity" method="post"
                                                         enctype="multipart/form-data">

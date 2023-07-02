@@ -186,4 +186,4 @@ app.use('/account', accountRouter);
 app.use('/profile', profileRouter);
 
 
-app.listen(process.env.PORT || 3000, () => console.log('SERVER IS RUNNING...'));
+app.listen(process.env.PORT, () => console.log('SERVER IS RUNNING...'));

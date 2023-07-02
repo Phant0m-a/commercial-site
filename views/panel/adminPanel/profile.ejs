@@ -94,8 +94,13 @@
                               <!-- body -->
                               
                               <div class="modal-body">
-                                <img src="http://localhost:3001/<%=userData.imgSrc%>" width="60px"
+                                <%if(userData.imgSrc != ""){%>
+                                    <img src="/<%=userData.imgSrc%>" width="60px"
                                     height="60px" alt="userData image">
+                                <%}else{%>
+                                    <img src="/assets/img/noImage.png" width="60px"
+                                    height="60px" alt="userData image">
+                                <%}%>
                                 <br>
                                 <form action="/profile/editProfile" method="post" enctype="multipart/form-data">
                                     <div class="form-group">
