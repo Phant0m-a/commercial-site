@@ -19856,11 +19856,7 @@ ul.list-inline li {
     margin-right: 8px
 }
 
-.btn.v3:hover {
-    background: #fff;
-    color: #00ba74 !important;
-    border: 1px solid #00ba74
-}
+
 
 .btn.v4 {
     background: transparent;
@@ -19914,11 +19910,11 @@ ul.list-inline li {
     font-size: 16px
 }
 
-.btn.v6:hover {
+/* .btn.v6:hover {
     background: #fff;
     color: #00ba74 !important;
     border: 1px solid transparent
-}
+} */
 
 .btn.v7 {
     background: #00ba74;
@@ -26198,7 +26194,7 @@ a#login-icon-btn.btn.v6 span,
     height: unset !important;
     padding: 0 5px;
     left: auto;
-    background: #00BA74;
+    background:green;
     border: solid 1px #a0dec4;
     display: block;
     transition: .3s;
