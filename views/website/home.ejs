@@ -9,20 +9,31 @@
     <link type="image/png" rel="icon" href="assets/img/logo.png">
 </head>
 
+<style>
+    @media only screen and (max-width: 700px) {
+        .remove-logo {
+          visibility: hidden;
+  }
+  .my_search_field{
+    display: block;align-items: center; margin-left: auto;margin-right: auto;
+}
+}
+</style>
+
 <body>
     <div class="page-wrapper">
-        <header class="header transparent scroll-hide">
-            <div class="site-navbar-wrap v1">
-                <div class="container">
-                    <div class="site-navbar">
-                        <div class="row align-items-center">
+        <header class="header " style="background-color: aqua;">
+            <div class="site-navbar-wrap v1" style="background-color: rgba(248, 248, 248,0.9);" >
+                <div class="container"  >
+                    <div class="site-navbar" >
+                        <div class="row align-items-center" >
                             <div class="col-lg-2 col-md-5 col-sm-5 col-4 order-2 order-xl-1 order-lg-1 order-sm-2 order-md-2"
                                 id="logo">
                                 <a class="navbar-brand" href="/">
-                                    <p style="display:inline-block"><img src="assets/img/logo.png"
+                                    <p style="display:inline-block"><img src="/assets/img/logo.png"
                                             style="width: 50px; height: 50px;margin-bottom: 10px;margin-right: 5px;"
                                             alt="logo" class="img-fluid">
-                                        <h3 style="color:white;padding-top: 15px; display: inline-block;">Zameen Lo</h3>
+                                        <h3 class="remove-logo" style="color:green;padding-top: 15px; display: inline-block;">Zameen Lo</h3>
                                     </p>
                                 </a>
                             </div>
@@ -64,11 +75,9 @@
                             <div class="d-lg-none col-md-6 col-sm-6 order-md-3 order-sm-3 col-6 order-3 text-right"
                                 id="mobile-right-nav">
                                 <ul class="user-btn v2">
-                                    <li><a data-toggle="modal" data-target="#user-login-popup" id="login-icon-btn"><i
-                                                class="lnr lnr-user"></i> &nbsp;</a>
-                                    </li>
+                                   
                                     <li>
-                                        <a class="btn v6" href="/login" id="login-icon-btn">Post Property
+                                        <a class="btn v6" href="/login"  id="login-icon-btn">Post Property
                                             <span>Free</span></a>
                                     </li>
                                 </ul>
@@ -77,12 +86,10 @@
                                 <div class="menu-btn">
 
                                     <ul class="user-btn v2">
-                                        <li><a data-toggle="modal" data-target="#user-login-popup"
-                                                id="login-icon-btn"><i class="lnr lnr-user"></i></a>
-                                        </li>
+                                        
                                     </ul>
-                                    <div class="add-list float-right ml-3">
-                                        <a class="btn v6" href="/login">Post Property <span>Free</span> </a>
+                                    <div class="add-list float-right ml-3" style="background-color: rgb(32, 170, 32);padding: 4px 10px;border-radius: 5px;">
+                                        <a class="btn v6"  href="/login" style="border: none;">Post Property <span style="color: black;background-color: white;">Free</span> </a>
                                     </div>
                                 </div>
                             </div>
@@ -113,18 +120,18 @@
                                 <form id="homesearch-for-sale" class="hero__form v1 filter listing-filter"
                                     action="/properties" method="get" role="form">
 
-                                    <div class="row">
+                                    <div class="row my_search_field">
 
 
                                         <div
-                                            class="col-xl-10 col-lg-10 col-md-9 col-sm-9 col-8 py-3 pl-30 pr-0 location-clear">
+                                            class="col-xl-10 col-lg-10 col-md-12 col-sm-12 col-12 py-3 pl-30 pr-0 location-clear">
                                             <input type="text" class="input-box" name="name" id="place-event"
                                                 placeholder="Search for Property" value="">
 
                                         </div>
-                                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 py-3 pl-30 pr-0">
+                                        <div class="col-xl-2 col-lg-2 col-md-2  col-2 py-3 pl-30 pr-0 ">
                                             <div class="submit_btn">
-                                                <button class="btn v3" type="submit" id="sale-submit">Search</button>
+                                                <button class="btn v3" type="submit" id="sale-submit" style="background-color: green;" >Search</button>
                                             </div>
 
                                         </div>

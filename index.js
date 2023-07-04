@@ -44,6 +44,7 @@ app.use(upload({
 
 // CONNECTION MONGO
 mongoose.connect(
+    // 'mongodb://0.0.0.0:27017/zameenlo',
     'mongodb+srv://ranafaisal989301:Q4w3CKdMuTq5ZIRt@cluster0.bcczg5l.mongodb.net/?retryWrites=true&w=majority',
     { useNewUrlParser: true, useUnifiedTopology: true }
 );
@@ -186,4 +187,4 @@ app.use('/account', accountRouter);
 app.use('/profile', profileRouter);
 
 
-app.listen(process.env.PORT, () => console.log('SERVER IS RUNNING...'));
+app.listen(process.env.PORT || 3001, () => console.log('SERVER IS RUNNING...'));
