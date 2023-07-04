@@ -9,20 +9,31 @@
     <link type="image/png" rel="icon" href="/assets/img/logo.png">
 </head>
 
+<style>
+    @media only screen and (max-width: 700px) {
+        .remove-logo {
+          visibility: hidden;
+  }
+  .my_search_field{
+    display: block;align-items: center; margin-left: auto;margin-right: auto;
+}
+}
+</style>
+
 <body>
     <div class="page-wrapper">
-        <header class="header transparent scroll-hide">
-            <div class="site-navbar-wrap v1">
-                <div class="container">
-                    <div class="site-navbar">
-                        <div class="row align-items-center">
+        <header class="header " style="background-color: aqua;">
+            <div class="site-navbar-wrap v1" style="background-color: rgba(248, 248, 248,0.9);" >
+                <div class="container"  >
+                    <div class="site-navbar" >
+                        <div class="row align-items-center" >
                             <div class="col-lg-2 col-md-5 col-sm-5 col-4 order-2 order-xl-1 order-lg-1 order-sm-2 order-md-2"
                                 id="logo">
                                 <a class="navbar-brand" href="/">
                                     <p style="display:inline-block"><img src="/assets/img/logo.png"
                                             style="width: 50px; height: 50px;margin-bottom: 10px;margin-right: 5px;"
                                             alt="logo" class="img-fluid">
-                                        <h3 class="remove-logo" style="color:white;padding-top: 15px; display: inline-block;">Zameen Lo</h3>
+                                        <h3 class="remove-logo" style="color:green;padding-top: 15px; display: inline-block;">Zameen Lo</h3>
                                     </p>
                                 </a>
                             </div>
@@ -77,8 +88,8 @@
                                     <ul class="user-btn v2">
                                         
                                     </ul>
-                                    <div class="add-list float-right ml-3">
-                                        <a class="btn v6" href="/login">Post Property <span>Free</span> </a>
+                                    <div class="add-list float-right ml-3" style="background-color: rgb(32, 170, 32);padding: 4px 10px;border-radius: 5px;">
+                                        <a class="btn v6"  href="/login" style="border: none;">Post Property <span style="color: black;background-color: white;">Free</span> </a>
                                     </div>
                                 </div>
                             </div>
@@ -92,7 +103,7 @@
                 background: none;
             }
         </style>
-        <div class="hero v1 section-padding" style="background-image: url(/assets/1e23d7f5/header/hero_5.webp)">
+        <div class="hero v1 section-padding" style="background-image: url(assets/1e23d7f5/header/hero_5.webp)">
             <div class="overlay op-3"></div>
             <div class="container">
                 <div class="col-md-10 offset-md-1">
@@ -101,146 +112,43 @@
                         <p class="header-text v2"><span></span></p>
                     </div>
                 </div>
-                <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
 
-                    <div class="row">
-                        <div class="col-md-12">
+                        <div class="tab-content add_list_content">
+                            <div class="tab-pane fade active show " id="for-sale">
+                                <form id="homesearch-for-sale" class="hero__form v1 filter listing-filter"
+                                    action="/properties" method="get" role="form">
 
-                            <div class="tab-content add_list_content">
-                                <div class="tab-pane fade active show " id="for-sale">
-                                    <form id="homesearch-for-sale" class="hero__form v1 filter listing-filter"
-                                        action="/properties" method="get" role="form">
-
-                                        <div class="row">
+                                    <div class="row my_search_field">
 
 
-                                            <div
-                                                class="col-xl-10 col-lg-10 col-md-9 col-sm-9 col-8 py-3 pl-30 pr-0 location-clear">
-                                                <input type="text" class="input-box" name="name" id="place-event"
-                                                    placeholder="Search for Property" value="<%=query%>">
-
-                                            </div>
-                                            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 py-3 pl-30 pr-0">
-                                                <div class="submit_btn">
-                                                    <button class="btn v3" type="submit"
-                                                        id="sale-submit">Search</button>
-                                                </div>
-
-                                            </div>
-
+                                        <div
+                                            class="col-xl-10 col-lg-10 col-md-12 col-sm-12 col-12 py-3 pl-30 pr-0 location-clear">
+                                            <input type="text" class="input-box" name="name" id="place-event"
+                                                placeholder="Search for Property" value="">
 
                                         </div>
-                                    </form>
-                                </div>
+                                        <div class="col-xl-2 col-lg-2 col-md-2  col-2 py-3 pl-30 pr-0 ">
+                                            <div class="submit_btn">
+                                                <button class="btn v3" type="submit" id="sale-submit" style="background-color: green;" >Search</button>
+                                            </div>
 
+                                        </div>
+
+
+                                    </div>
+                                </form>
                             </div>
+
                         </div>
                     </div>
-
-
                 </div>
-
             </div>
 
         </div>
 
 
-        <span class="scrolltotop"><i class="lnr lnr-arrow-up"></i></span>
-        <div class="container" style="background-color:white;">
-
-            <section style="background-color: white;">
-                <div class="container py-5">
-                    
-                    <h3><%if( properties.length == 0){%> 
-                        No Properties Available
-                    <%}%>
-                    </h3>
-
-                    <%properties.forEach((property)=>{%>
-                        <% if(property.isEnabled){%>
-                            <div class="row justify-content-center mb-3">
-                                <div class="col-md-12 col-xl-12">
-                                    <div class="card shadow-0 border rounded-3">
-                                        <div class="card-body">
-                                            <div class="row">
-                                                <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
-                                                    <div class="bg-image hover-zoom ripple rounded ripple-surface">
-                                                        <img src="/<%=property.imgSrc%>"
-                                                            class="w-100" />
-                                                        <a href="#!">
-                                                            <div class="hover-overlay">
-                                                                <div class="mask"
-                                                                    style="background-color: rgba(253, 253, 253, 0.15);">
-                                                                </div>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6 col-lg-6 col-xl-6">
-                                                    <h5 style=" white-space: nowrap;
-                                                    overflow: hidden;
-                                                    text-overflow: ellipsis;">
-                                                        <%=property.name%>
-                                                    </h5>
-                                                    <div class="d-flex flex-row">
-                                                        <div class="text-danger mb-1 me-2">
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                        </div>
-                                                        <span>310</span>
-                                                    </div>
-                                                    <div class="mt-1 mb-0 text-muted small">
-                                                        <span>Rooms: <%=property.rooms%></span>
-                                                        <span class="text-primary"> • </span>
-                                                        <span>Baths: <%=property.baths%></span>
-                                                        <span class="text-primary"> • </span>
-                                                        <span>Size: <%=property.size%><br /></span>
-                                                    </div>
-                                                    <!-- <div class="mb-2 text-muted small">
-                             <span>Unique design</span>
-                             <span class="text-primary"> • </span>
-                             <span>For men</span>
-                             <span class="text-primary"> • </span>
-                             <span>Casual<br /></span>
-                           </div> -->
-                                                    <br>
-                                                    <p class="text-truncate mb-4 mb-md-0" style=" white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">
-                                                        <%=property.description%>
-                                                    </p>
-                                                </div>
-                                                <div
-                                                    class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
-                                                    <div class="d-flex flex-row align-items-center mb-1">
-                                                        <h4 class="mb-1 me-1">Rs. <%=property.price%>
-                                                        </h4>
-                                                        <span class="text-danger"> Limited Time Offer</span>
-                                                        <!-- <span class="text-danger"><s>For Sale</s></span> -->
-                                                    </div>
-
-                                                    <h6 class="text-success">Contact: <%=property.userId.phone%>
-                                                    </h6><br>
-                                                    <div class="d-flex flex-column mt-4">
-                                                        <a href="/viewProperty/<%=property.id%>"
-                                                            class="btn btn-primary btn-sm" type="button">Details</a>
-                                                        <!-- <button class="btn btn-outline-primary btn-sm mt-2" type="button">
-                               Add to wishlist
-                             </button> -->
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <%}%>
-                                <%})%>
-
-                </div>
-            </section>
-        </div>
-    </div>
     <br><br>
 
    
