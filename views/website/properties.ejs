@@ -19,7 +19,7 @@
                             <div class="col-lg-2 col-md-5 col-sm-5 col-4 order-2 order-xl-1 order-lg-1 order-sm-2 order-md-2"
                                 id="logo">
                                 <a class="navbar-brand" href="/">
-                                    <p style="display:inline-block"><img src="/assets/img/logo.png"
+                                    <p style="display:inline-block"><img src="assets/img/logo.png"
                                             style="width: 50px; height: 50px;margin-bottom: 10px;margin-right: 5px;"
                                             alt="logo" class="img-fluid">
                                         <h3 style="color:white;padding-top: 15px; display: inline-block;">Zameen Lo</h3>
@@ -29,7 +29,7 @@
                             <div
                                 class="col-lg-5 col-md-1 col-sm-1 col-2 order-1 order-xl-2 order-lg-2 order-sm-1 order-md-1">
                                 <nav class="site-navigation text-left">
-                                    <div class="container">
+                                    <!-- <div class="container">
                                         <ul class="site-menu js-clone-nav d-none d-lg-block">
                                             <li>
                                                 <a href="/" class='active'>Home</a>
@@ -45,7 +45,7 @@
                                             </li>
 
                                         </ul>
-                                    </div>
+                                    </div> -->
                                 </nav>
                                 <div class="d-lg-none sm-left">
                                     <a href="#" class="mobile-bar js-menu-toggle">
@@ -154,6 +154,12 @@
 
             <section style="background-color: white;">
                 <div class="container py-5">
+                    
+                    <h3><%if( properties.length == 0){%> 
+                        No Properties Available
+                    <%}%>
+                    </h3>
+
                     <%properties.forEach((property)=>{%>
                         <% if(property.isEnabled){%>
                             <div class="row justify-content-center mb-3">
@@ -241,29 +247,35 @@
     </div>
     <br><br>
 
+   
     <div class="footer-wrapper v3 ">
         <div class="footer-top-area">
             <div class="container">
                 <div class="row nav-folderized">
                     <div class="col-lg-4 col-md-12">
                         <div class="footer-logo">
-                            <a href="/"> <img src="/assets/1e23d7f5/rp-whit-n-green-logo.png" width="149" height="138"
-                                    alt="logo"></a>
+                            <a class="navbar-brand" href="/">
+                                <p style="display:inline-block"><img src="assets/img/logo.png"
+                                        style="width: 50px; height: 50px;margin-bottom: 10px;margin-right: 5px;"
+                                        alt="logo" class="img-fluid">
+                                    <h3 style="color:white;padding-top: 15px; display: inline-block;">Zameen Lo</h3>
+                                </p>
+                            </a>
                             <div class="company-desc">
                                 <h3>
-                                    Realproperty.pk - Pakistan's best free property listings website.
+                                    ZameenLo.glitch.me - Pakistan's best free property listings website.
                                     <span> Trusted place to investing, renting, buying &amp; selling online. </span>
                                 </h3>
                                 <div class="footer-social-wrap">
                                     <p>Follow us on </p>
                                     <ul class="social-buttons style2">
-                                        <li><a href="https://www.facebook.com/realproperty.pk" target="_blank"><i
+                                        <li><a href="#" target="_blank"><i
                                                     class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="https://twitter.com/realpropertypk" target="_blank"><i
+                                        <li><a href="#" target="_blank"><i
                                                     class="fab fa-twitter"></i></a></li>
-                                        <li><a href="https://www.pinterest.com/realpropertypk" target="_blank"><i
+                                        <li><a href="#" target="_blank"><i
                                                     class="fab fa-pinterest-p"></i></a></li>
-                                        <li><a href="https://pk.linkedin.com/company/realproperty-pk/"
+                                        <li><a href="#"
                                                 target="_blank"><i class="fab fa-linkedin"></i></a></li>
                                     </ul>
                                 </div>
@@ -271,7 +283,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-12 text-center sm-left">
-                        <div class="footer-content nav">
+                        <!-- <div class="footer-content nav">
                             <h2 class="title">Quick Links Searches</h2>
                             <ul class="list res-list">
                                 <li><a class="link-hov style2" href="/to-rent/">Property for Rent</a></li>
@@ -279,10 +291,10 @@
                                 <li><a class="link-hov style2" href="/maps/">Society Maps</a></li>
                                 <li><a class="link-hov style2" href="/blog/">News & Guide</a></li>
                             </ul>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="col-lg-2 col-md-12 text-center sm-left">
-                        <div class="footer-content nav">
+                        <!-- <div class="footer-content nav">
                             <h2 class="title">Company</h2>
                             <ul class="list res-list">
                                 <li><a class="link-hov style2" href="/about.html"> About us</a></li>
@@ -290,7 +302,7 @@
                                 <li><a class="link-hov style2" href="/terms.html">Privacy Policy</a></li>
                                 <li><a class="link-hov style2" href="/rent-sell-property-free/">Place Free Ad</a></li>
                             </ul>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="col-lg-3 col-md-12">
                         <div class="footer-content">
@@ -300,7 +312,7 @@
                                     <div class="icon">
                                         <i class="fa fa-map-marker" aria-hidden="true"></i>
                                     </div>
-                                    <div class="text">1st Floor Habib Tower, Main Boulevard Valencia Town, Lahore
+                                    <div class="text">1st Floor Habib Tower, Main Boulevard Valencia Town, Bhakkar
                                     </div>
                                 </li>
                                 <li class="contact-info">
@@ -308,14 +320,14 @@
                                         <i class="fa fa-envelope" aria-hidden="true"></i>
                                     </div>
                                     <div class="text"><a href="#"><span class="__cf_email__"
-                                                data-cfemail="741d1a121b340611151804061b041106000d5a041f">[email&#160;protected]</span></a>
+                                              >zameenlo@gmail.com</span></a>
                                     </div>
                                 </li>
                                 <li class="contact-info">
                                     <div class="icon">
                                         <i class="fa fa-phone" aria-hidden="true"></i>
                                     </div>
-                                    <div class="text">+92 320 145 00 92</div>
+                                    <div class="text">+92 345 583 25 70</div>
                                 </li>
                             </ul>
                         </div>
@@ -328,7 +340,7 @@
                 <div class="row align-items-center">
                     <div class="col-md-8 offset-md-2">
                         <p>
-                            &copy;RealProperty.pk 2023. All rights reserved. </p>
+                            &copy;Zameenlo 2023. All rights reserved. </p>
                     </div>
                 </div>
             </div>
@@ -338,6 +350,251 @@
 
 
 
+    <div class="modal fade" id="user-login-popup">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true"><i class="lnr lnr-cross"></i></span></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="user-login-section">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <ul class="ui-list nav nav-tabs mb-30" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" data-toggle="tab" data-href="#login" role="tab"
+                                                aria-selected="true" id="login-btn">Login</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" 
+                                               href="/register">Register</a>
+                                        </li>
+                                    </ul>
+                                    <div class="login-wrapper">
+                                        <div class="ui-dash tab-content">
+                                            <div class="tab-pane fade show active" id="login" role="tabpanel">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <form id="register_form" action="/site/login-signup"
+                                                            method="post">
+                                                            <input type="hidden" name="_csrf"
+                                                                value="qV_TG8CHpYPbZU_h2GOTmyMYqtTyVJ1JIaSLgJ0gW_abCb0qut-Qu-4VNoS0KaTeaynst7EtyR5Tlt7Sq3Exsg==">
+                                                            <div class="form-group">
+                                                                <div class="form-group field-username required">
+                                                                    <input type="text" id="username"
+                                                                        class="form-control" name="LoginForm[username]"
+                                                                        placeholder="Email" autofocus
+                                                                        aria-required="true">
+                                                                    <p class="help-block help-block-error"></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div
+                                                                    class="form-group field-loginform-password required">
+                                                                    <input type="password" id="loginform-password"
+                                                                        class="form-control" name="LoginForm[password]"
+                                                                        placeholder="Password" aria-required="true">
+                                                                    <p class="help-block help-block-error"></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mt-20">
+                                                                <div class="col-md-6 col-12 text-left">
+                                                                    <div class="res-box">
+                                                                        <div class="form-group field-check-l">
+                                                                            <div class="checkbox">
+                                                                                <label for="check-l">
+                                                                                    <input type="hidden"
+                                                                                        name="LoginForm[rememberMe]"
+                                                                                        value="0"><input type="checkbox"
+                                                                                        id="check-l"
+                                                                                        name="LoginForm[rememberMe]"
+                                                                                        value="1" checked>
+                                                                                    Remember me
+                                                                                </label>
+                                                                                <p class="help-block help-block-error">
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 col-12 text-right">
+                                                                    <div class="res-box sm-left">
+                                                                        <a class="nav-link"
+                                                                            id="forgot-password-btn">Forgot
+                                                                            Password?</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                        <div class="res-box text-center mt-30">
+                                                            <button type="submit" class="btn v8" id="login_btn"><span
+                                                                    class="lnr lnr-exit"></span> Log In</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <p class="text-center"> Don't have an account?
+                                                    <span id="register-btn2">Register here</span>
+                                                </p>
+                                                <p class="text-center"> Having problem in login? Please call us:</p>
+                                                <p class="text-center"> +92 320 145 00 92</p>
+                                            </div>
+                                            <div class="tab-pane fade" id="register" role="tabpanel">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <form id="register-form" action="/site/login-signup"
+                                                            method="post">
+                                                            <input type="hidden" name="_csrf"
+                                                                value="qV_TG8CHpYPbZU_h2GOTmyMYqtTyVJ1JIaSLgJ0gW_abCb0qut-Qu-4VNoS0KaTeaynst7EtyR5Tlt7Sq3Exsg==">
+                                                            <div class="form-group">
+                                                                <div
+                                                                    class="form-group field-signupform-username required">
+                                                                    <input type="text" id="signupform-username"
+                                                                        class="form-control" name="SignupForm[username]"
+                                                                        autofocus placeholder="Fullname*"
+                                                                        aria-required="true">
+                                                                    <p class="help-block help-block-error"></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="form-group field-signupform-email required">
+                                                                    <input type="text" id="signupform-email"
+                                                                        class="form-control" name="SignupForm[email]"
+                                                                        placeholder="Email*" aria-required="true">
+                                                                    <p class="help-block help-block-error"></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div
+                                                                    class="form-group field-signupform-password required">
+                                                                    <input type="password" id="signupform-password"
+                                                                        class="form-control" name="SignupForm[password]"
+                                                                        placeholder="Password*" aria-required="true">
+                                                                    <p class="help-block help-block-error"></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div
+                                                                    class="form-group field-signupform-password_repeat required">
+                                                                    <input type="password"
+                                                                        id="signupform-password_repeat"
+                                                                        class="form-control"
+                                                                        name="SignupForm[password_repeat]"
+                                                                        placeholder="Confirm Password*"
+                                                                        aria-required="true">
+                                                                    <p class="help-block help-block-error"></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div
+                                                                    class="form-group field-signupform-mobile required">
+                                                                    <input type="text" id="signupform-mobile"
+                                                                        class="form-control" name="SignupForm[mobile]"
+                                                                        aria-required="true">
+                                                                    <p class="help-block help-block-error"></p>
+                                                                </div> <input type="hidden"
+                                                                    name="SignupForm[mobile_num]"
+                                                                    id="signupform-mobile_num">
+                                                            </div>
+                                                            <div class="input-group">
+                                                                I am &nbsp; &nbsp;
+                                                                <div class="form-group field-signupform-individual">
+                                                                    <div class="checkbox">
+                                                                        <label for="signupform-individual">
+                                                                            <input type="hidden"
+                                                                                name="SignupForm[individual]"
+                                                                                value="0"><input type="checkbox"
+                                                                                id="signupform-individual"
+                                                                                name="SignupForm[individual]" value="1"
+                                                                                checked="checked" data-size="small">
+                                                                            Individual
+                                                                        </label>
+                                                                        <p class="help-block help-block-error"></p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group field-signupform-agent">
+                                                                    <div class="checkbox">
+                                                                        <label for="signupform-agent">
+                                                                            <input type="hidden"
+                                                                                name="SignupForm[agent]"
+                                                                                value="0"><input type="checkbox"
+                                                                                id="signupform-agent"
+                                                                                name="SignupForm[agent]" value="1"
+                                                                                data-size="small">
+                                                                            Agent
+                                                                        </label>
+                                                                        <p class="help-block help-block-error"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="res-box text-left">
+                                                                <div class="form-group field-signupform-terms required">
+                                                                    <div class="checkbox">
+                                                                        <label for="signupform-terms">
+                                                                            <input type="hidden"
+                                                                                name="SignupForm[terms]"
+                                                                                value="0"><input type="checkbox"
+                                                                                id="signupform-terms"
+                                                                                name="SignupForm[terms]" value="1"
+                                                                                aria-required="true">
+                                                                            By logging in, you agree to realproperty<a
+                                                                                href='https://www.realproperty.pk/terms.html'
+                                                                                target='_blank'> terms & conditons</a>
+                                                                        </label>
+                                                                        <p class="help-block help-block-error"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <input type="hidden" name="SignupForm[type]"
+                                                                id="signupform-type">
+                                                            <div class="res-box text-center mt-30">
+                                                                <button type="submit" class="btn v8"><i
+                                                                        class="lnr lnr-enter"></i>Sign Up</button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="forgot_password" role="tabpanel">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <form id="register-form3" action="/site/login-signup"
+                                                            method="post">
+                                                            <input type="hidden" name="_csrf"
+                                                                value="qV_TG8CHpYPbZU_h2GOTmyMYqtTyVJ1JIaSLgJ0gW_abCb0qut-Qu-4VNoS0KaTeaynst7EtyR5Tlt7Sq3Exsg==">
+                                                            <div class="form-group">
+                                                                <div
+                                                                    class="form-group field-passwordresetrequestform-email required">
+                                                                    <input type="text"
+                                                                        id="passwordresetrequestform-email"
+                                                                        class="form-control"
+                                                                        name="PasswordResetRequestForm[email]"
+                                                                        placeholder="Email*" aria-required="true">
+                                                                    <p class="help-block help-block-error"></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="res-box text-center mt-30">
+                                                                <button type="submit" class="btn v8"><i
+                                                                        class="lnr lnr-enter"></i>Submit</button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
